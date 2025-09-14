@@ -1,7 +1,7 @@
 // app/api/questions/route.ts
 
 import { NextRequest, NextResponse } from 'next/server';
-import { PrismaClient } from '../../generated/prisma';
+import { PrismaClient } from 'db';
 import { GoogleGenAI } from '@google/genai';
 
 const prisma = new PrismaClient();
